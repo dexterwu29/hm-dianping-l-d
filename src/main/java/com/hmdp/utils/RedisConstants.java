@@ -1,10 +1,15 @@
 package com.hmdp.utils;
 
+/**
+ * Redis相关常量
+ */
 public class RedisConstants {
+    // region: 用户登录
     public static final String LOGIN_CODE_KEY = "login:code:";
-    public static final Long LOGIN_CODE_TTL = 2L;
+    public static final Long LOGIN_CODE_TTL = 5L;
     public static final String LOGIN_USER_KEY = "login:token:";
-    public static final Long LOGIN_USER_TTL = 36000L;
+    public static final Long LOGIN_USER_TTL = 120L;
+    // endregion
 
     public static final Long CACHE_NULL_TTL = 2L;
 

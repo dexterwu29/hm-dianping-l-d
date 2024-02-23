@@ -27,7 +27,7 @@ public interface IUserService extends IService<User> {
     Result sendCode(String phone, HttpSession session);
 
     /**
-     * 用户登录
+     * 用户登录（基于Redis实现登录）
      *
      * @param loginForm
      * @param session
